@@ -25,7 +25,10 @@ function PostList() {
 
 
             <h1 className='bet-list-title'>My API</h1>
+            {/* If you don't want to render the list immediately, you can use this button instead of the useEffect, you would just comment out the whole useEffect including the apiGet function that it's calling.  Notice the apiGet is in the onClick */}
             {/* <button onClick={apiGet}>Fetch API</button> */}
+
+            {/* This is to format the json data if you just pull it and render it, remember it came in linear and then it changed to an object format?  */}
             {/* <pre> {JSON.stringify(data, null, 2)}</pre> */}
 
             <table>
