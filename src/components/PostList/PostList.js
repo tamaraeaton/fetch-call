@@ -40,28 +40,14 @@ function PostList() {
                         data.map((item) => {
                             return (
                                 <tr key={item.id} className="betlist-head-row bet-item">
-                                    <td className='custom-border custom-font'>{item.title}</td>
-                                    <td>{item.body}</td>
+                                    <Post item={item} />
                                 </tr>
                             )
                         }
                         )
-
                     }
                 </tbody>
             </table>
-
-            <div>
-                <ul>
-                    {data.map(item =>
-                        <>
-                            {/* <span><h1>Title</h1><li key={item.id}>{item.title}</li></span>
-                            <span><h3>Body</h3><li key={item.body}>{item.body}</li></span> */}
-                            <Post item={item} />
-                        </>
-                    )}
-                </ul>
-            </div>
         </div>
     )
 }
